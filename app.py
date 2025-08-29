@@ -35,7 +35,7 @@ def index():
 
                 # Handle edge case: model didn't summarize
                 if not summary or len(summary) >= len(source_text):
-                    error = "⚠️ The model couldn't summarize effectively. Try shorter input text."
+                    error = "⚠️ The model couldn't summarize effectively. Try longer input text."
 
             except Exception as e:
                 # Map common errors to friendlier messages
